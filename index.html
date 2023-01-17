@@ -12,39 +12,40 @@
     <div class="cal-main">
         <div class="cal-box">
             <div class="calculation">
-                <input type="number" class="question">
-                <input type="text" class="ans" readonly>
+                <input type="text" class="question" id="ques">
+                <input type="text" class="ans" id="ans" readonly>
             </div>
             <div class="cal-button">
                 <div class="button-sec-1">
-                    <button type="button" class="operations">AC</button>
-                    <button type="button" class="numbers">7</button>
-                    <button type="button" class="numbers">4</button>
-                    <button type="button" class="numbers">1</button>
-                    <button type="button" class="numbers">%</button>
+                    <button onclick="dataClear()"  type="button" class="operations">AC</button>
+                    <button onclick="display(7)"  type="button" class="numbers">7</button>
+                    <button onclick="display(4)"  type="button" class="numbers">4</button>
+                    <button onclick="display(1)"  type="button" class="numbers">1</button>
+                    <button onclick="display('%')"  type="button" class="numbers">%</button>
                 </div>
                 <div class="button-sec-2">
-                    <button type="button" class="operations">/</button>
-                    <button type="button" class="numbers">8</button>
-                    <button type="button" class="numbers">5</button>
-                    <button type="button" class="numbers">2</button>
-                    <button type="button" class="numbers">0</button>
+                    <button onclick="display('/')"  type="button" class="operations">/</button>
+                    <button onclick="display(8)"  type="button" class="numbers">8</button>
+                    <button onclick="display(5)"  type="button" class="numbers">5</button>
+                    <button onclick="display(2)"  type="button" class="numbers">2</button>
+                    <button onclick="display(0)"  type="button" class="numbers">0</button>
                 </div>
                 <div class="button-sec-3">
-                    <button type="button" class="operations"><i class="fa-solid fa-xmark"></i></button>
-                    <button type="button" class="numbers">9</button>
-                    <button type="button" class="numbers">6</button>
-                    <button type="button" class="numbers">3</button>
-                    <button type="button" class="numbers">,</button>
+                    <button onclick="display('*')"  type="button" class="operations"><i class="fa-solid fa-xmark"></i></button>
+                    <button onclick="display(9)"  type="button" class="numbers">9</button>
+                    <button onclick="display(6)"  type="button" class="numbers">6</button>
+                    <button onclick="display(3)"  type="button" class="numbers">3</button>
+                    <button onclick="display(',')"  type="button" class="numbers">,</button>
                 </div>
                 <div class="button-sec-4">
-                    <button type="button" class="operations"><i class="fa-solid fa-delete-left"></i></button>
-                    <button type="button" class="operations"><i class="fa-solid fa-minus"></i></button>
-                    <button type="button" class="operations"><i class="fa-solid fa-plus"></i></button>
-                    <button type="button" class="operations-equal"><i class="fa-solid fa-equals"></i></button>
+                    <button onclick="back()"  type="button" class="operations"><i class="fa-solid fa-delete-left"></i></button>
+                    <button onclick="display('-')"  type="button" class="operations"><i class="fa-solid fa-minus"></i></button>
+                    <button onclick="display('+')" type="button" class="operations"><i class="fa-solid fa-plus"></i></button>
+                    <button onclick="evaluat()"  type="button" class="operations-equal"><i class="fa-solid fa-equals"></i></button>
                 </div>
             </div>
         </div>
     </div>
 </body>
+<script src="./script.js"></script>
 </html>
